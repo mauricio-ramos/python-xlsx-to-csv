@@ -1,0 +1,351 @@
+[
+   {
+      "original_name" : "Trends in Messages - Overall",
+      "name" : "trends_in_messages_overall",
+      "id" : 1,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "comments",
+         "mention_posts",
+         "direct_messages",
+         "mention_comments",
+         "mention_stories",
+         "ad_comments",
+         "wall_posts"
+      ]
+   },
+   {
+      "original_name" : "Trends in Sentiment - Status",
+      "name" : "trends_in_messages_status",
+      "id" : 2,
+      "table_init_cell" : "A18",
+      "melt_df" : "True",
+      "melt_parameters" : {
+         "id_vars" : [
+            "period"
+         ],
+         "var_name" : "sentiment",
+         "value_name" : "qt_messages"
+      },
+      "cols" : [
+         "period",
+         "positive",
+         "negative",
+         "neutral",
+         "no_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Trends in Messages by Channel - Overall",
+      "name" : "trends_in_messages_by_channel_overall",
+      "id" : 3,
+      "table_init_cell" : "A18",
+      "melt_df" : "True",
+      "melt_parameters" : {
+         "id_vars" : [
+            "period"
+         ],
+         "var_name" : "source",
+         "value_name" : "qt_messages"
+      },
+      "cols" : [
+         "period",
+         "instagram",
+         "twitter",
+         "facebook"
+      ]
+   },
+   {
+      "original_name" : "Share Incoming messages Channels - Overall",
+      "name" : "share_incoming_messages_channels_overall",
+      "id" : 4,
+      "table_init_cell" : "A16",
+      "melt_df" : "False",
+      "cols" : [
+         "source",
+         "qt_messages",
+         "percent_messages"
+      ]
+   },
+   {
+      "original_name" : "Incoming Messages - Status: Done",
+      "name" : "incoming_messages_status_done ",
+      "id" : 5,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "qt_sentiment",
+         "percent_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Incoming Messages Social Report - Feed Sentiment",
+      "name" : "incoming_messages_feed_sentiment ",
+      "id" : 6,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "feed_sentiment",
+         "qt_sentiment",
+         "percent_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Status",
+      "name" : "status",
+      "id" : 7,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "status",
+         "quantity",
+         "percentage"
+      ]
+   },
+   {
+      "original_name" : "Response Time",
+      "name" : "response_time",
+      "id" : 8,
+      "table_init_cell" : "A13",
+      "melt_df" : "False",
+      "cols" : [
+         "response_time",
+         "response_time_previous_period",
+         "relative_change"
+      ]
+   },
+   {
+      "original_name" : "Volume by Channel - Twitter",
+      "name" : "volume_by_channel_twitter",
+      "id" : 9,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "positive",
+         "neutral",
+         "negative",
+         "no_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Volume by Channel - Facebook",
+      "name" : "volume_by_channel_facebook",
+      "id" : 10,
+      "table_init_cell" : "A18",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "positive",
+         "neutral",
+         "negative",
+         "no_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Volume by Channel - Facebook",
+      "name" : "volume_by_channel_instagram",
+      "id" : 11,
+      "table_init_cell" : "A18",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "positive",
+         "neutral",
+         "negative",
+         "no_sentiment"
+      ]
+   },
+ 
+   {
+      "original_name" : "Incoming messages Sustentabilidade - This Year",
+      "name" : "incoming_messages_sustentabilidade_this_year",
+      "id" : 12,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "quantity",
+         "percentagem"
+      ]
+   },
+   {
+      "original_name" : "Trends in Messages - Sustentabilidade",
+      "name" : "trends_in_messages_sustentabilidade",
+      "id" : 13,
+      "table_init_cell" : "A18",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "sentiment",
+         "quantity",
+         "percentagem"
+      ]
+   },
+   {
+      "original_name" : "Incoming messages Qualidade - This Year",
+      "name" : "incoming_messages_qualidade_this_year",
+      "id" : 14,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "sentiment",
+         "quantity",
+         "percentagem"
+      ]
+   },
+   {
+      "original_name" : "Trends in Messages - Qualidade ",
+      "name" : "trends_in_messages_qualidade ",
+      "id" : 15,
+      "table_init_cell" : "A18",
+      "melt_df" : "False",
+      "cols" : [
+         "period",
+         "negative",
+         "positive",
+         "neutral",
+         "no_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Produto x Qualidade",
+      "name" : "produto_x_qualidade",
+      "id" : 16,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity"
+
+      ]
+   },
+   {
+      "original_name" : "Problemas Gerais - Qualidade",
+      "name" : "problemas_gerais_qualidade",
+      "id" : 17,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity"
+
+      ]
+   },
+   {
+      "original_name" : "Incoming messages Digital Flagship - This Year",
+      "name" : "incoming_messages_digital_flagship_this_year",
+      "id" : 18,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "quantity",
+         "percentage"
+
+      ]
+   },
+   {
+      "original_name" : "Trends in Sentiment - Digital Flagship",
+      "name" : "trends_in_sentiment_digital_flagship",
+      "id" : 19,
+      "table_init_cell" : "A18",
+      "melt_df" : "False",
+      "cols" : [
+
+         "period",
+         "negative",
+         "positive",
+         "neutral",
+         "no_sentiment"
+      ]
+   },
+   {
+      "original_name" : "Problemas Gerais - Digital Flagship",
+      "name" : "problemas_gerais_digital_flagship",
+      "id" : 20,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity"
+
+      ]
+   },  
+   {
+      "original_name" : "Incoming messages TNS - August ",
+      "name" : "incoming_messages_tns_august ",
+      "id" : 21,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "quantity",
+         "percentage"
+      ]
+   },
+   {
+      "original_name" : "Principais Tags - TNS ",
+      "name" : "principais_tags_tns ",
+      "id" : 22,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity",
+         "percentage"
+      ]
+   },            
+   {
+      "original_name" : "Incoming messages BAPE - August",
+      "name" : "incoming_messages_bape_august ",
+      "id" : 23,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "quantity",
+         "percentage"
+      ]
+   },
+   {
+      "original_name" : "Principais Tags - BAPE ",
+      "name" : "principais_tags_bape ",
+      "id" : 24,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity",
+         "percentage"
+      ]
+   },
+   {
+      "original_name" : "Incoming messages Casual - August",
+      "name" : "incoming_messages_casual_august ",
+      "id" : 25,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "sentiment",
+         "quantity",
+         "percentage"
+      ]
+   },
+   {
+      "original_name" : "Principais Tags - Casual ",
+      "name" : "principais_tags_casual ",
+      "id" : 26,
+      "table_init_cell" : "A17",
+      "melt_df" : "False",
+      "cols" : [
+         "content_label",
+         "quantity",
+         "percentage"
+      ]
+   }                                                     
+]
